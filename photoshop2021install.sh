@@ -1,5 +1,14 @@
 #!/bin/bash
 
+echo 'Type 1 for Ubuntu, 2 for arch [assuming you already have yay installed] (1/2)'
+read input
+if [ "$input" -gt 0 -a "$input" -lt 2 ]
+then
+sudo apt install -y zenity appmenu-gtk3-module appmenu-gtk2-module tar wget curl dxvk
+else
+yay -S zenity appmenu-gtk-module-git tar-git wget-git curl-git dxvk-bin
+fi
+
 mkdir $1/Adobe-Photoshop
 
 wget  https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
