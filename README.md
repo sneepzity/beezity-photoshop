@@ -9,4 +9,6 @@ git clone https://github.com/sneepzity/beezity-photoshop
 
 cd beezity-photoshop
 
-photoshop2021install.sh ~/Photoshop-2021 # (you can replace the path with anything you want)
+sh photoshop2021install.sh ~/Photoshop-2021 
+
+# (you can replace the path with anything you want)
